@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page</title>
+    <style>
+        header{
+            height:100vh;
+            width:100%;
+            background-image: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0zNzNiYXRjaDE1LTIxNy0wMS5qcGc.jpg");
+            filter:brightness(70%);
+            background-size: cover;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        nav{
+            width:100%;
+            height:100px;
+            display:flex;
+            font-weight: 110;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .logo{
+            font-size: 2.5em;
+            letter-spacing: 2.3px;
+            font-weight: 210;
+            font-style: bold;
+            padding-top: 1.75cm;
+            padding-right: 5.3cm;
+            color:rgb(118, 3, 51)
+        }
+        .menu a{
+            text-decoration: none;
+            color: black;
+            font-size: 21px;
+            padding-top: 1.4cm;
+            padding:10px 20px;
+            position:relative;
+            font-weight: 210;
+        }
+        .menu a:before{
+          content: '';
+          position: absolute;
+          top:0;
+          left:0;
+          width:0%;
+          height:100%;
+          border-bottom: 2px solid rgb(190, 130, 130);
+          transition:0.2s linear;
+        }
+        .menu a:hover:before{
+            width:90%;
+        }
+        .booking a{
+            text-decoration: none;
+            color: white;
+            font-size: 10px;
+            padding-top: 1cm;
+            padding:10px 20px;
+            background: rgb(214, 19, 19);
+        }
+        .booking a:hover{
+            background: transparent;
+            border:2px solid rgb(49, 2, 2);
+        }
+        .caption{
+            max-width: 650px;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-80%);
+            text-align: center;
+            color:rgb(100, 2, 2);
+        }
+        .caption span{
+            letter-spacing: 4px;
+            font-size: 1.5em;;
+        }
+        
+        .caption h1{
+            font-size:3.5em;
+            font-style:italic;
+            color: rgb(1, 2, 36);
+        }
+        .caption a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            padding-top: 2cm;
+            padding:10px 20px;
+            background: indianred;
+            border-radius:8px;
+        }
+        .caption a:hover{
+            background: transparent;
+            border:2px solid indianred;
+        }
+        #aboutus 
+        {
+            height:100vh;
+            width:100%;
+            background-image: url("https://img.freepik.com/free-photo/elevated-view-white-blue-candy-capsules-corner-cyan-backdrop_23-2147877565.jpg");
+            filter:brightness(75%);
+            background-size: cover;
+            text-align: center;
+        }
+        #aboutus div>h1
+        {
+            padding-top: 1.5cm;;
+             font-size: 3em;
+             font-family: serif;
+             color: rgb(33, 1, 33);
+        }
+        #aboutus div>h2{
+            font-size: 2.5em;
+            font-family: serif;
+            color:rgb(106, 8, 8);
+        }
+        #aboutus section{
+            text-align: center;
+            font-size:1.8em;
+            color:rgb(239, 239, 239)
+        }
+        #ourservices{
+            width:100%;
+            height:90vh;
+            background-image:url("https://static.vecteezy.com/system/resources/thumbnails/009/329/318/small_2x/colorful-pills-capsules-glowing-cross-on-a-blue-gradient-background-medicine-health-care-symbols-copy-space-illustration-vector.jpg");
+            background-size: cover;
+            filter: brightness(60%);
+            text-align: justify;
+        }
+        #ourservices h1{
+            font-size: 3em;
+            padding-top: 1cm;
+            font-family: serif;
+            color: rgb(11, 205, 239);
+        }
+        #ourservices section{
+            font-size:1.25em;
+            color:whitesmoke;
+        }
+        #packages{
+            height:90vh;
+            width:100%;
+            background-image: url("https://img.freepik.com/free-photo/copy-space-tablets-with-pills_23-2148506656.jpg");
+            filter:brightness(75%);
+            background-size: cover;
+            text-align: center;
+        }
+        #packages h1{
+
+            text-align: center;
+            font-size: 3.5em;
+            padding-top: 1cm;
+            font-family: serif;
+           color: rgb(203, 8, 190);
+        }
+        #packages p{
+            font-size: 2em;
+            color:rgb(87, 10, 10);
+            text-align: center;
+
+        }
+        #contact
+        {
+            height:80vh;
+            width:100%;
+            background-color: rgb(43, 197, 236);
+            filter:brightness(75%);
+            background-size: cover;
+            text-align: center;
+        }
+        #contact h1{
+            font-size:3.5em;
+            padding-top: 1cm;
+            font-family: serif;
+           color: rgb(18, 6, 81);
+        
+        }
+        #contact section{
+            font-size:1.5em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+        <div class="logo">
+            Adarsha!
+        </div>
+        <div class="menu">
+            <a href="#aboutus">About Us</a>
+            <a href="#ourservices">Lab Tests</a>
+            <a href="#packages">Our Products</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+        <div class="booking">
+            <a href="#">join us</a>
+        </div>
+        </nav>
+        <section class="caption">
+            <span><b>24*7 online services</b></span>
+            <h1>Adarsha Online Pharmacy</h1>
+            <br>
+            <a href="#">buy now!</a>
+          
+        </section>
+    
+     </header>
+    <section id="aboutus">
+        <div>
+        <h1>About Us</h1>
+        <h2>Who We Are</h2>
+        </div>
+        <section>
+            <p>We are an innovative online pharmacy dedicated to providing top-quality medications,<br> healthcare products, and personalized services to meet your unique needs.<br> With a strong commitment to excellence and customer satisfaction, we strive to<br> make healthcare accessible and convenient for everyone.</p>
+            <p style="color: black;"><b>What We Offer</b></p>
+            <ol></ol><li>Wide range of products</li>
+            <li>Affordable Prices</li>
+            <li>Expert Advice</li>
+            <li>convenience</li>
+            <li>Privacy and Security</li></ol>
+         </section>
+    </section>
+    <section id="ourservices">
+       
+            <h1> Lab Tests</h1>
+            <section>
+                <p>   </p>
+                <p><b style="text-decoration: underline;"> Doctor Created Health Checks:</b></p>
+                <p><b>  Full Body Checkup </b> &emsp;&emsp;&emsp;&emsp;1199/- 
+                </p><p><b>Blood studies</b>&emsp;&emsp;&emsp;399/- </p>
+                <p><b>  Diabetes </b>&emsp;&emsp;&emsp;&emsp; 299/-</p>
+                <p><b>  Hormone</b>&emsp;&emsp;&emsp;&emsp;499/- </p>
+                <p><b>  Vitamin</b>&emsp;&emsp;&emsp;&emsp;499/- </p>
+                <p><b>  Thyroid</b>&emsp;&emsp;&emsp;&emsp;499/- </p>
+                <p><b style="text-decoration: underline;"> Top Booked Tests:</b></p>
+                <p><b>  Complete Blood Count</b> &emsp;&emsp;&emsp;699/- </p>
+                <p><b>  Kidney Functioning </b>&emsp;&emsp;&emsp;&emsp;799/-</p>
+                <p><b>  Lipid Profile </b>&emsp;&emsp;&emsp;&emsp;899/-  </p>
+             </section>
+    </section>
+    <section id="packages">
+        <h1>PRODUCTS</h1>
+       
+        <p >At Adarsha Pharmacy, quality is at the heart of everything we do.<br> We are dedicated to providing our customers with only <br>the highest quality medications and healthcare products.<br> Each product in our inventory is sourced from reputable and trusted <br>manufacturers who adhere to stringent quality control standards.<br> Our commitment to excellence ensures that every item you<br> purchase from us meets rigorous safety and efficacy criteria.<br> By prioritizing quality, we aim to deliver <br>not only effective health solutions but also peace of mind,<br> knowing that you and your loved ones are using products <br>that are safe, reliable, and of the utmost standard. 
+        </p> 
+      
+    </section>
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <section style="color: aliceblue;">
+            <p>For any kind of queries,do reach us.Dial <b style="color: rgb(244, 4, 4);">0000000000 .</b></p>
+            <p>Customer care services on above number are available 24 hours.</p>
+            <p>For Emergency Appointment.Dial <b style="color: rgb(244, 4, 4);">9999999999 .</b></p>
+            <p><b style="text-decoration: underline;color:rgb(73, 7, 116)">Locations:</b></p>
+            <p>Uppal,Hyderabad,Telangana.</p>
+            <p>Bandra,Mumbai,Maharastra.</p>
+            <p>JPN Road,Warangal,Telangana.</p>
+            <p>Choolai,Chennai,Tamil Nadu.</p> 
+            <p>Adarsh Nagar,New Delhi.</p>
+            <p></p>
+        </section>
+    </section>
+</body>
+</html>
